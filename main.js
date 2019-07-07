@@ -1,11 +1,14 @@
 function makeItem(item) {
   return `
   <div class="item">
-          <img src="${item.img}" />
-          <p class="title">${item.title}</p>
-          <p class="seller">${item.seller}</p>
-          <p class="price">$${item.price}</p>
-        </div>
+    <div class="heart">
+    <i class="far fa-heart" id="redheart"></i>
+    </div>
+    <img src="${item.img}"/>
+    <p class="title">${item.title}</p>
+    <p class="seller">${item.seller}</p>
+    <p class="price">$${item.price}</p>
+  </div>
   `
 }
 

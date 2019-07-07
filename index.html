@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Julie - Weekend 2</title>
   <link rel="stylesheet" type="text/css" href="main.css"></link>
+  <script src="https://kit.fontawesome.com/4c329a7eb8.js"></script>
 </head>
 <body>
   <div id="container">
     <header>
       <section id="top">
         <logo>
-
         </logo>
       </section>
       <nav id="menu">
@@ -46,13 +46,13 @@
     </header>
     <section>
       <aside>
-        <section id="special">
+        <section id="sidemenu"> <!--Special offers-->
           <p>Special offers</p>
-          <element id="selectsale">
+          <element id="sideoptions">
           <input type="checkbox" name="onsale" value="onsale">On sale
         </element>
         </section>
-        <section id="categories">
+        <section id="sidemenu"> <!--All categories-->
           <p>All categories</p>
             <ul>
               <li>Home & Living</li>
@@ -62,9 +62,9 @@
             </ul>
             <span id="more">Show more</span>
         </section>
-        <section id="ship">
+        <section id="sidemenu"> <!--Shipping-->
           <p>Shipping</p>
-            <element id="shipmethod">
+            <element id="sideoptions">
               <span>
                 <input type="checkbox" name="free" value="free">Free Shipping
               </span>
@@ -76,9 +76,9 @@
               </span>
             </element>
         </section>
-        <section id="location">
+        <section id="sidemenu"> <!--Shop location-->
             <p>Shop location</p>
-            <element id="loc-options">
+            <element id="sideoptions">
               <span>
                 <input type="radio" name="shoplocation" value="anywhere" checked>Anywhere
               </span>
@@ -88,13 +88,88 @@
               <span>
                 <input type="radio" name="shoplocation" value="custom" checked>Custom
               </span>
-              <element>
+              <element id="submit">
                 <input type="text" name="freetext" placeholder="Enter location">
+                <button type="submit" id="arrow">
+                <i class="fas fa-angle-right"></i>
+              </button>
               </element>
             </element>
         </section>
+        <section id="sidemenu"> <!--Prices-->
+            <p>Price ($)</p>
+            <element id="sideoptions">
+              <span>
+                <input type="radio" name="lessthan" value="lessthan" checked>Under $25
+              </span>
+              <span>
+                <input type="radio" name="range1" value="range1" checked>$25 to $50
+              </span>
+              <span>
+                <input type="radio" name="range2" value="range2" checked>$50 to $100
+              </span>
+              <span>
+                <input type="radio" name="over" value="over" checked>Over $100 
+              </span>
+              <span>
+                <input type="radio" name="customprice" value="customprice" checked>Custom
+              </span>
+                <div id="pricerange">
+                  <input type="number" name="price" id="lowhigh" placeholder="Low">
+                  <p>to</p>
+                  <input type="number" name="price" id="lowhigh" placeholder="High">
+                  <button type="submit" id="arrow">
+                    <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
+            </element>
+        </section>
+        <section id="sidemenu"> <!--Color-->
+            <p>Color</p>
+              <element id="sideoptions">
+                <span>
+                  <input type="checkbox" name="clear" value="clear">Clear
+                </span>
+                <span>
+                  <input type="checkbox" name="black" value="black">Black
+                </span>
+                <span>
+                  <input type="checkbox" name="white" value="white">White
+                </span>
+                <span>
+                  <input type="checkbox" name="brown" value="brown">Brown
+                </span>
+                <span>
+                 <input type="checkbox" name="blue" value="blue">Blue
+                </span>
+                <span id="more">Show more</span>
+              </element>
+          </section>
+          <section id="sidemenu"> <!--Ordering Options-->
+              <p>Ordering Options</p>
+                <element id="sideoptions">
+                  <span>
+                    <input type="checkbox" name="giftcard" value="giftcard">Accepts Etsy gift cards
+                  </span>
+                  <span>
+                    <input type="checkbox" name="customized" value="customized">Customizable
+                  </span>
+                  <span>
+                    <input type="checkbox" name="wrapped" value="wrapped">Can be gift-wrapped
+                  </span>
+                </element>
+            </section>
+            <section id="sidemenu"> <!--Ship to-->
+              <p>Ship to</p>
+                <select name="country">
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="mexico">Mexico</option>
+                </select>
+            </section>
       </aside>
       <main id="stuff">
+         <!-- <div class="heart"></div> -->
         <!--
         <div class="item">
           <img src="http://placeholder.it/200x175"/>
