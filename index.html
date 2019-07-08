@@ -12,10 +12,37 @@
   <div id="container">
     <header>
       <section id="top">
-        <logo>
-        </logo>
+      <section id="leftside">
+          <logo id="logo">
+          <img src="assets/etsy_logo.png" href="#">
+          </logo>
+          <section id="searcharea">
+            <input id="typing" type="text" name="freetext" placeholder="Search for items or shops">
+            <button id="loupe"><i class="fas fa-search"></i></button>
+          </section>
+        </section> 
+      
+        <div class="rightside">
+            <div href="#">Sell on Etsy</div>
+            <div href="#">Register</div>
+            <div href="#">Sign in</div>
+           <section>
+            <div> 
+                <i class="fas fa-briefcase" href="#"></i>
+                <span class="caption" href="#">Discover</span>
+            </div>
+            <div href="#">
+                <i class="fas fa-shopping-cart" href="#"></i>
+              <span class="caption" href="#">Cart</span>
+            </div>
+          </section>
+        </div>
+
+
+
+
       </section>
-      <nav id="menu">
+      <nav id="menu"> <!--Top menu-->
         <ul>
           <li><a href="#"></a>Jewelry & Accessories</li>
         <li><a href="#"></a>Clothing & Shoes</li>
@@ -25,22 +52,22 @@
         <li><a href="#"></a>Art & Collectibles</li>
         <li><a href="#"></a>Craft Supplies</li>
         <li><a href="#"></a>Vintage</li>
-        <li><a href="#"></a>Gift</li>
+        <li><i class="fas fa-gift"></i><a href="#"></a> Gift</li>
         </ul>
       </nav>
 
-      <nav id="buttons">
+      <nav id="buttons"> <!--Orange buttons-->
         <ul>
-          <li id="orange"><a href="#"></a>whiskey decanter</li>
-          <li id="orange"><a href="#"></a>whiskey stones</li>
-          <li id="orange"><a href="#"></a>whiskey glasses</li>
-          <li id="orange"><a href="#"></a>whiskey barrel</li>
-          <li id="orange"><a href="#"></a>bourbon</li>
-          <li id="orange"><a href="#"></a>scotch</li>
-          <li id="yellow"><a href="#"></a>whiskey gift</li>
-          <li id="yellow"><a href="#"></a>whiskey print</li>
-          <li id="yellow"><a href="#"></a>whiskey sign</li>
-          <li id="bloodorange"><a href="#"></a>beer</li>
+          <li class="orange"><a href="#"></a>whiskey decanter</li>
+          <li class="orange"><a href="#"></a>whiskey stones</li>
+          <li class="orange"><a href="#"></a>whiskey glasses</li>
+          <li class="orange"><a href="#"></a>whiskey barrel</li>
+          <li class="orange"><a href="#"></a>bourbon</li>
+          <li class="orange"><a href="#"></a>scotch</li>
+          <li class="yellow"><a href="#"></a>whiskey gift</li>
+          <li class="yellow"><a href="#"></a>whiskey print</li>
+          <li class="yellow"><a href="#"></a>whiskey sign</li>
+          <li class="bloodorange"><a href="#"></a>beer</li>
         </ul>
       </nav>
     </header>
@@ -80,13 +107,13 @@
             <p>Shop location</p>
             <element id="sideoptions">
               <span>
-                <input type="radio" name="shoplocation" value="anywhere" checked>Anywhere
+                <input type="radio" name="shoplocation" value="anywhere">Anywhere
               </span>
               <span>
-                <input type="radio" name="shoplocation" value="US" checked>United State
+                <input type="radio" name="shoplocation" value="US">United State
               </span>
               <span>
-                <input type="radio" name="shoplocation" value="custom" checked>Custom
+                <input type="radio" name="shoplocation" value="custom">Custom
               </span>
               <element id="submit">
                 <input type="text" name="freetext" placeholder="Enter location">
@@ -100,19 +127,19 @@
             <p>Price ($)</p>
             <element id="sideoptions">
               <span>
-                <input type="radio" name="lessthan" value="lessthan" checked>Under $25
+                <input type="radio" name="lessthan" value="lessthan">Under $25
               </span>
               <span>
-                <input type="radio" name="range1" value="range1" checked>$25 to $50
+                <input type="radio" name="range1" value="range1">$25 to $50
               </span>
               <span>
-                <input type="radio" name="range2" value="range2" checked>$50 to $100
+                <input type="radio" name="range2" value="range2">$50 to $100
               </span>
               <span>
-                <input type="radio" name="over" value="over" checked>Over $100 
+                <input type="radio" name="over" value="over">Over $100 
               </span>
               <span>
-                <input type="radio" name="customprice" value="customprice" checked>Custom
+                <input type="radio" name="customprice" value="customprice">Custom
               </span>
                 <div id="pricerange">
                   <input type="number" name="price" id="lowhigh" placeholder="Low">
@@ -169,7 +196,6 @@
             </section>
       </aside>
       <main id="stuff">
-         <!-- <div class="heart"></div> -->
         <!--
         <div class="item">
           <img src="http://placeholder.it/200x175"/>
@@ -178,10 +204,65 @@
           <p class="price">PRICE</p>
         </div>
         -->
+        <!--
+        <section id="tooltip">
+          <div class="hovtext">
+            <p class="link">LINK</p>
+          </div>
+        </section>
+      -->
       </main>
     </section>
     <footer>
+        <p>Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</p>
+      <div id="email">
+        <input id="enter" type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subcribe</button>
+      </div>
+      <div id="mountain">
+        <img src="assets/bluemountain.png">
+        </div> 
+      <div id="list">
+        <ul>Shop
+          <li href="#">Gift cards</li>
+          <li href="#">Etsy blog</li>
+        </ul>
+        <ul>Sell
+            <li href="#">Sell on Etsy</li>
+            <li href="#">Teams</li>
+            <li href="#">Forum</li>
+            <li href="#">Affiliates</li>
+          </ul>
+          <ul>About
+              <li href="#">Etsy, Inc.</li>
+              <li href="#">Policies</li>
+              <li href="#">Investors</li>
+              <li href="#">Careers</li>
+              <li href="#">Press</li>
+              <li href="#">Impact</li>
+            </ul>
+          <ul>Help
+            <li href="#">Help Center</li>
+            <li href="#">
+              <div id="circled">
+                <i class="fab fa-etsy"></i>
+                <button id="app"> Dowload the Etsy App
+                   <!-- <i></i> -->
+                  </button>
+              </div>
+                </li>
+                <li href="#">
+                    <ul id="social">
+                      <li href="#"><i class="fab fa-instagram"></i></li>
+                      <li href="#"><i class="fab fa-facebook-square"></i></li>
+                      <li href="#"><i class="fab fa-pinterest"></i></li>
+                      <li href="#"><i class="fab fa-twitter"></i></li>
+                      <li href="#"><i class="fab fa-youtube"></i></li>
+                    </ul>
+                </li>
+              </ul>
 
+      </div>
     </footer>
   </div>
   <script src="items.js"></script>
