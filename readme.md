@@ -1,3 +1,7 @@
+#### Check out a live demo of this project at https://jberteloot.github.io/Create-Etsy-Search-Page/
+
+## Create Etsy Search Page: Assignment Instructions
+
 ### Learning Objectives
 
 After completing this assignment, you should:
